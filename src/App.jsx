@@ -49,10 +49,6 @@ function App() {
     setCurrentMove(move => move + 1);
   };
 
-  // const moveTo = move => {
-  //   setCurrentMove(move);
-  // };
-
   const onNewGameStart = () => {
     setHistory(NEW_GAME);
     setCurrentMove(0);
@@ -77,15 +73,6 @@ function App() {
       >
         Reset
       </button>
-
-      {/* <h2
-        style={{
-          fontWeight: 'normal',
-        }}
-      >
-        Current game history
-      </h2>
-      <History history={history} moveTo={moveTo} currentMove={currentMove} /> */}
     </div>
   );
 }
